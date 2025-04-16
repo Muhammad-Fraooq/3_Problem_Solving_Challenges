@@ -5,10 +5,11 @@
 # 🔹 Output: "olleh"
 # 💡 Hint: Use Python's slicing feature.
 
-def problem_1():
+def problem_1() :
     """ Reverse a String """
     # Function to reverse a string
-    def reverse_string(s):
+    def reverse_string(s) -> str:
+        """ Reverse the input string """
         return s[::-1]
 
     # Example usage

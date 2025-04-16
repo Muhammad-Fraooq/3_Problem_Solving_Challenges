@@ -7,14 +7,14 @@
 
 def problem_3():
     """ Sum of Digits """
-    def sum_of_digits(n):
+    def sum_of_digits(n) -> int:
         """ Convert the number to a string and iterate over each digit """
         if n == 0:
             return 0
         else:
             # return n % 10 + sum_of_digits(n // 10) # Using recursion
             # Using string conversion and sum function
-            return sum(int(d) for d in str(n))
+            return sum(int(d) for d in str(n)) # Using a generator expression to sum the digits
 
     n = int(input("Enter a non-negative integer: "))
     digit_sum = sum_of_digits(n)

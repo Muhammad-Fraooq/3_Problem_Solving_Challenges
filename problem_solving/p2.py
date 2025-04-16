@@ -7,10 +7,10 @@
 
 def problem_2():
     """ Count Vowels in a String """
-    def count_string(s):
+    def count_string(s) -> int:
         """ Count the number of vowels in a string"""
         vowels = 'aeiouaeiou'  # Define the vowels to check for
-        # count = 0
+        # count : int = 0
         # for char in s:
         #     if char in set(vowels):  # Check if each character is in a set of vowels.
         #         count += 1
